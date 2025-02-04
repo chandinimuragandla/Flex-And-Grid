@@ -1,0 +1,29 @@
+.parent{
+    display:flex;
+    flex-direction: row; /* same as  colum use same properties but main axis: y axis in column */
+    height:500px;
+    width:600px;
+    border:2px solid black;
+   
+    justify-content: space-evenly;
+    align-content: space-between;/*vertically center and use (flex-start, flex-end, space between ,space around) */ 
+    }
+    .child{
+        width: 100px;
+        height: 100px;
+    }
+    #c1{
+        background-color: aqua;
+        align-self: center; /* it shows vertically how the children/item  presents it i srelated to row suppose column means cross axis shows now.*/
+     
+    }
+    #c2{
+        background-color: blue;
+        align-self: flex-end;
+      
+    }
+    #c3{
+        background-color: rgb(42, 165, 58);
+        align-self: flex-start;
+        
+    }
