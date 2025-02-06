@@ -1,0 +1,28 @@
+.parent{
+    display:grid;
+    width:700px;
+    height: 100vh;
+    grid-template-columns:  repeat(3,300px); /* suppose we need 10 columns 10 times we dont need to writ 10 times px */
+    grid-template-rows: auto 300px;
+    grid-gap:20px 20px;
+
+    grid-template-areas:"child1 child1 child3"
+                         "child1 child1 child3";
+   
+}
+.child1{
+   grid-area:child1;
+   justify-self: center; /*particular we need to change one element top,bottom,center)vertically*/
+   align-items: flex-start /*particular we need to change the element in horizontally like top bottom center..,*/
+}
+.child3{
+   background-color: rgb(210, 30, 114);
+}
+
+.parent>div:nth-child(odd){
+    background-color: aquamarine;
+    ;
+}
+.parent>div:nth-child(even){
+    background-color: rgb(253, 175, 7);
+}
